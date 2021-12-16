@@ -1,0 +1,23 @@
+Write a function called repeatStr which repeats the given string string exactly n times.
+
+repeat_str(6, "I") // "IIIIII"
+repeat_str(5, "Hello") // "HelloHelloHelloHelloHello"
+
+Sample Tests:
+Describe(Fixed_tests) {
+  It(Sample_cases) {
+    Assert::That(repeat_str(3, "*"), Equals("***"));
+    Assert::That(repeat_str(5, "#"), Equals("#####"));
+    Assert::That(repeat_str(2, "ha "), Equals("ha ha "));
+    Assert::That(repeat_str(5, ">"), Equals(">>>>>"));
+    Assert::That(repeat_str(10, "!"), Equals("!!!!!!!!!!"));
+    Assert::That(repeat_str(3, "hello "), Equals("hello hello hello "));
+    Assert::That(repeat_str(3, "$"), Equals("$$$"));
+    Assert::That(repeat_str(5, "a"), Equals("aaaaa"));
+    Assert::That(repeat_str(6, "A"), Equals("AAAAAA"));
+    Assert::That(repeat_str(7, "aA"), Equals("aAaAaAaAaAaAaA"));
+    Assert::That(repeat_str(3, ""), Equals(""));
+    Assert::That(repeat_str(0, "null"), Equals(""));
+    Assert::That(repeat_str(0, ""), Equals(""));
+  }
+};

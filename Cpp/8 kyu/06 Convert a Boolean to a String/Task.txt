@@ -1,0 +1,17 @@
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+
+Sample Tests:
+
+Describe(boolean_to_string_method)
+{
+    It(basic_tests)
+    {
+        Assert::That(boolean_to_string(true), Equals("true"));
+        Assert::That(boolean_to_string(false), Equals("false"));
+        Assert::That(boolean_to_string(false), Equals("false"));
+        Assert::That(boolean_to_string(true), Equals("true"));
+    }
+};
+

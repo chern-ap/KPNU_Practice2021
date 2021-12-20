@@ -1,0 +1,17 @@
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+Sample Tests:
+Describe(Slicing_String)
+{
+    It(Check_Short_Length_String)
+    {
+        Assert::That(sliceString("tuna"), Equals("un"));
+           Assert::That(sliceString("rats"), Equals("at"));
+              Assert::That(sliceString("code"), Equals("od"));
+    }
+    It(Check_Longer_String)
+    {
+        Assert::That(sliceString("country"), Equals("ountr"));
+           Assert::That(sliceString("place"), Equals("lac"));
+              Assert::That(sliceString("translation"), Equals("ranslatio"));
+    }
+};

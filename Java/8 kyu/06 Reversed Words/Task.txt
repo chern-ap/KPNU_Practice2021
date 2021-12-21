@@ -1,0 +1,21 @@
+Complete the solution so that it reverses all of the words within the string passed in.
+
+Example:
+
+"The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+
+Sample Tests:
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import org.junit.runners.JUnit4;
+
+// TODO: Replace examples and use TDD development by writing your own tests
+
+public class SolutionTest {
+    @Test
+    public void testSomething() {
+         assertEquals("eating like I", ReverseWords.reverseWords("I like eating"));
+         assertEquals("flying like I", ReverseWords.reverseWords("I like flying"));
+         assertEquals("nice is world The", ReverseWords.reverseWords("The world is nice"));
+    }
+}

@@ -1,0 +1,19 @@
+Your task is to write function factorial.
+
+https://en.wikipedia.org/wiki/Factorial
+
+Sample Tests:
+#include <criterion/criterion.h>
+
+unsigned __int128 factorial(unsigned num);
+
+Test(Sample_Test, should_return_the_factorial)
+{
+    cr_assert_eq(factorial(0), 1);
+    cr_assert_eq(factorial(1), 1);
+    cr_assert_eq(factorial(2), 2);
+    cr_assert_eq(factorial(5), 120);
+    cr_assert_eq(factorial(10), 3628800);
+    cr_assert_eq(factorial(15), 1307674368000);
+    cr_assert_eq(factorial(20), 2432902008176640000);
+}

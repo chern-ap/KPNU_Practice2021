@@ -1,0 +1,13 @@
+Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+Sample tests:
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class SolutionTest {
+
+    @Test
+    public void testSimpleString1() {
+        assertEquals("Hello World", Solution.removeExclamationMarks("Hello World!"));
+    }
+}

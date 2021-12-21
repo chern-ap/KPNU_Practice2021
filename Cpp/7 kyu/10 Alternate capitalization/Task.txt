@@ -1,0 +1,32 @@
+Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+
+For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+
+The input will be a lowercase string with no spaces.
+
+Good luck!
+
+#include <string>
+#include <utility>
+
+using namespace std;
+
+Describe(Sample_Test)
+{
+    It(Basic_tests)
+    {
+        doTest("abcdef", {"AbCdEf", "aBcDeF"});
+        doTest("codewars", {"CoDeWaRs", "cOdEwArS"});
+        doTest("abracadabra", {"AbRaCaDaBrA", "aBrAcAdAbRa"});
+        doTest("codewarriors", {"CoDeWaRrIoRs", "cOdEwArRiOrS"});
+    }
+    inline string pair2str(const pair<string,string> &p)
+    {
+        return "{\"" + p.first + "\", \"" + p.second + "\"}";
+    }
+    void doTest(const string &s, const pair<string,string> &expected)
+    {
+        pair<string,string> actual = capitalize(s);
+        Assert::That(pair2str(actual), Equals(pair2str(expected)));
+    }
+};
